@@ -1,0 +1,207 @@
+{
+	"variables": [],
+	"info": {
+		"name": "DjangoAPI",
+		"_postman_id": "6150c5b7-9cd9-4995-e784-056db6ea6b82",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Registrations",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/user/register/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"email\": \"example@gmail.com\",\n\t\"name\": \"100rabh\",\n\t\"password\":\"123456\",\n\t\"password2\":\"123456\",\n\t\"tc\":\"True\"\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/user/login/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"example@gmail.com\",\n\t\"password\":\"hello123\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User Profile",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Change User Password",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Send Password Reset Email",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Reset User Password",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Reset User Password",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/user/reset-password/NA/b9bps5-341b3840d24326866fe4e2ce6f990b06/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\": \"hello123\",\n\t\"password2\": \"hello123\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Send Password Reset Email",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/user/send-reset-password-email/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" :\"example@gmail.com\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Change User Password",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/user/changepassword/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU5MDc0MzIzLCJpYXQiOjE2NTkwNzMxMjMsImp0aSI6IjRkNjc4MjJjNWRhNTRiZjFiNWEzZGIzM2ZlZWY2NjFlIiwidXNlcl9pZCI6NH0.ZU5HYWiukEOyH_8WWpO8w9wrLNNJ9hs-mVlRXufj8ec",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\":\"hello\",\n\t\"password2\":\"hello\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User Profile",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/user/profile/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU5MDA5MjAxLCJpYXQiOjE2NTkwMDgwMDEsImp0aSI6IjVmMzFjMGMyZmQ2OTRmNWZhYTgwNDY4NDhkNGQwNTYxIiwidXNlcl9pZCI6NH0.rLViCSLmw3XDJpGCJ1tqBrZPeemLTrY3WtTMfHi8Bbs",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
